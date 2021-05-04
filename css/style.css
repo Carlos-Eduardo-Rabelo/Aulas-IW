@@ -1,16 +1,33 @@
 body{
-	background-color: #C0C0C0
-}	
+	background-image: url(../imagens/Fundo.jpg);
+	background-repeat: round;
+}
+header, footer{
+	width: 100%; 	
+	padding: 5px; color: white;
+
+	}	
 h1{
-	border-style: solid;border-color: #000000; text-align: center;background-color: #000000; color: white; font-size: 45px
+	border-style: solid;border-color: #000000; text-align: center;background-color: #000000; color: white;
+	font-size: 45px
 }
 h2{
-	border-style: dashed;border-color: #000000; text-align: center;color: darkgray; background-color: #000000; font-size: 35px;
+	border-style: dashed;border-color: #000000; text-align: center;color: darkgray; 
+	background-color: #000000;
+	font-size: 35px;
 }
 p{
-	text-align: center; color: black; font-size: 25px
+	text-align: center; color: #00FF00; font-size: 25px
 }
 ul li{
-	text-align: left; color: black; font-size: 25px
+	text-align: left; color: #00FF00; font-size: 25px
+} 
+div{
+	font-size: 20px; text-align: center; border: double; border-color: black
 }
-figure{border-style: dashed; border-color: #696969; background-color: #000000}
+figure{
+	text-align: center; 
+}
+img{
+	border: 5px double; border-color: #00FFFF;
+}
