@@ -1,12 +1,17 @@
 body{
-	font-size: 13px; background-color: #C0C0C0;		
+	font-size: 13px; 
+	background-image: url(../imagens/Fundo2.jpg);
+	background-repeat: round;	
+	}
+header, footer{
+	background-color: #000000 opacity: 0.3; 
+
+}
+
+h1, h2, h3, p, ul li, ol li{
+	color: white
 	}
 
-header, footer{
-	width: 100%;
-	background-color: #1C1C1C; 	
-	padding: 5px
-	}
 
 figure{
     text-align: justify; 
