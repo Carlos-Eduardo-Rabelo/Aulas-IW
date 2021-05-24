@@ -4,7 +4,8 @@ body{
 }
 header, footer{
 	width: 100%; 	
-	padding: 5px; color: white;
+	padding: 5px; 
+	color: white;
 	}	
 h1{
 	border-style: solid;
@@ -14,30 +15,35 @@ h1{
 	background-color: #000000;
 	color: white;
 	font-size: 45px;
+	line-height: 2
 }
 h2{
 	border-style: dashed;border-color: #000000; text-align: center;color: darkgray; 
 	background-color: #000000;
 	font-size: 35px;
+	line-height: 2
 }
 h3{
-	text-align: left; color: #00FF00; font-size: 25px
+	text-align: center; color: white; font-size: 25px;line-height: 2
 }
 p{
-	text-align: center; color: #00FF00; font-size: 25px
+	text-align: center; color: #00FF00; font-size: 25px; line-height: 1.5
 }
 ul li{
-	text-align: left; color: #00FF00; font-size: 25px
+	text-align: left; color: #00FF00; font-size: 25px;line-height: 2
 } 
 .link{
-	font-size: 20px; text-align: center; border: double; border-color: black
+	font-size: 20px; text-align: center; border: double; border-color: black; line-height: 2
 }
 .container{
-	font-size: 20px; text-align: center;
+	font-size: 20px; text-align: center; line-height: 2
 }
 figure{
-	text-align: center; 
+	text-align: center; line-height: 2
 }
 img{
-	border: 5px double; border-color: #00FFFF;
+	border: 5px double; border-color: #00FFFF; line-height: 2
+}
+.lista{
+	text-align: center;
 }

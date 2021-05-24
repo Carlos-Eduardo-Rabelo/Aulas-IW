@@ -4,7 +4,7 @@ body{
 	background-repeat: round;	
 	}
 header, footer{
-	background-color: #000000 opacity: 0.3; 
+	background-color: #000000; 
 
 }
 
@@ -24,10 +24,6 @@ figure{
 	margin-right: auto;
 	}
 
-.margin_top {
-	margin-top: 6%;
-	}
-
 h1{
 	text-align: center;
 	font-size: 60px;
@@ -36,6 +32,7 @@ h1{
 	margin-bottom: 5%;
 	margin-right: 25%;
 	margin-left: 25%;
+	line-height: 2
 	}
 
 h2{
@@ -44,6 +41,7 @@ h2{
 	font-weight: bold;        
 	margin-top: 5%;
 	margin-bottom: 3%;
+	line-height: 2
 	}
 
  h3{    	
@@ -52,6 +50,7 @@ h2{
 	font-weight: bold;
 	margin-top: 5%;
 	margin-bottom: 3%; 
+	line-height: 2
 	} 
 
 p{
@@ -61,6 +60,7 @@ p{
 	margin-bottom: 2%;
 	margin-left: 10%;
 	margin-right: 10%;
+	line-height: 0.5
 	}
 
 .center{
