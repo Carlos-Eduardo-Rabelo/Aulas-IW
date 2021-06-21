@@ -6,60 +6,80 @@ body{
 	background-repeat: round;
 	font-family: 'Pangolin', cursive;
 }
-.container{
-			margin-top: 40%;
-			width: 90%;
-			margin-right: auto;
-			margin-left: auto;
-			position: relative;
-}
-/* tela menor que 599px */
-@media screen and (max-width: 599px) {
 	.container{
-				margin-top: 100%;
+				margin-top: 40%;
+				width: 90%;
+				margin-right: auto;
+				margin-left: auto;
+				position: relative;
 	}
-	}
-/* telas maiores que 600px */
-@media screen and (min-width: 600px) {
-	.container{
-		margin-top: 50%;
-	}
-	}
-/* telas maiores que 768px */
-@media only screen and (min-width: 768px) {
-	.container{
-		margin-top: 33%;
-	}
-}
-header, footer{
-	background-color: blue;
-	width: 100%;
-	padding: 1%; 	 
-	font-family: 'Lobster', cursive;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 1.5em;
-	line-height: 1;
-	}
-	.fixo{
-
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 1030;
-	}
-	.ajustes{
+	header, footer{
+		background-color: rgb(0,0,255);
+		width: 100%;
+		padding: 1%; 	 
+		font-family: 'Lobster', cursive;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.5em;
 		line-height: 1;
-		text-align: center;
-	}
-	}
-	.ajustes li:hover{
-		background-color: #708090;
+		}
+		.menu-opcoes{
+			text-align: center;
+		}
+	/* tela menor que 599px */
+	@media screen and (max-width: 599px) {
+		.container{
+					margin-top: 100%;
+		}
+		}
+	/* telas maiores que 600px */
+	@media screen and (min-width: 600px) {
+		.container{
+			margin-top: 53%;
+		}
+		}
+	/* telas maiores que 768px */
+	@media screen and (min-width: 900px) {
+		.container{
+			margin-top: 15%;
+		}
+		header{
+			background-color: rgb(0,0,255,0.3);
+			flex-direction: row;
+			position: relative;
+		}	
+
+		.menu-opcoes{
+
+			position: absolute;
+			right: 10%;
+			top: 40%;
+		}
+		.menu-opcoes ul li{
+			display: inline;
+			margin-left: 10%;
+
+		}
 	}
 
+		.fixo{
+
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1030;
+		}
+		.ajustes{
+			line-height: 1;
+		}
+		}
+		.ajustes li:hover{
+			color: darkblue;
+			background-color: : #708090;
+		}
 	
 h1{
 	border-style: solid;
@@ -131,7 +151,8 @@ figure{
 	line-height: 2;
 }
 
-ul li, ol li{
+
+.listatexto{
 	font-size: 25px;
 	text-decoration: underline;
 	margin-top: 2%;
@@ -140,8 +161,6 @@ ul li, ol li{
 	margin-right: 20%;
 	text-align: justify;
 	line-height: 1.5;
-	}
-.listatexto{
 	color: #00FF00;
 }
 
@@ -186,4 +205,3 @@ a:active {
 		  background-color: transparent;
 		  text-decoration: underline;
 		}
-@media screen and (max-width: 600px) {}
