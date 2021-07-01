@@ -29,6 +29,22 @@ body{
 		.menu-opcoes{
 			text-align: center;
 		}
+	.li{
+		position: relative;
+		margin: 10px 0px;
+	}
+	.li::before{
+		content: '';
+		position: relative;
+		top: 0;
+		left: 0;
+		padding: 10px 15px;
+		background-image: url(../img/favicon2.png);
+		background-repeat: no-repeat;
+		margin-right: 10px;
+	}
+
+
 	/* tela menor que 599px */
 	@media screen and (max-width: 599px) {
 		.container{
@@ -41,29 +57,7 @@ body{
 			margin-top: 53%;
 		}
 		}
-	/* telas maiores que 768px */
-	@media screen and (min-width: 900px) {
-		.container{
-			margin-top: 15%;
-		}
-		header{
-			background-color: rgb(0,0,255,0.8);
-			flex-direction: row;
-			position: relative;
-		}	
-
-		.menu-opcoes{
-			display: inline;
-			position: absolute;
-			right: 10%;
-			top: 45%;
-		}
-		.menu-opcoes ul li{
-			display: inline;
-			margin-left: 4%;
-
-		}
-	}
+	
 
 		.fixo{
 
@@ -81,6 +75,40 @@ body{
 			color: darkblue;
 			background-color: : #708090;
 		}
+		#sobre{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			margin: 0 auto;
+		}
+
+		#sobre .sobre{
+			text-align: center;
+		}
+		.imgsobre{
+			width: 20%;
+			height: 20%;
+			transition: width 1s; height: 1s; transform: 1s;
+		}
+		.imgsobre:hover{
+			width: 40%;
+			height: 40%;
+		}
+		#galeria{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+		}
+		#galeria .galeria{
+			text-align: center;
+		}
+		.galeria{
+			width: 40%;
+			padding: 2%;
+		}
+
 	
 h1{
 	border-style: solid;
@@ -106,7 +134,8 @@ h3{
 	text-align: center;
 	color: white;
 	font-size: 25px;
-	line-height: 2
+	line-height: 2;
+	text-decoration: underline;
 }
 p{
 	text-align: center;
@@ -175,6 +204,41 @@ figure{
 	line-height: 1.5;
 	color: #00FF00;
 }
+form{
+	line-height: 1.5;
+}
+.formh3{
+	font-size: 2em;
+}
+.fundo{
+	background-color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+}
+.pform{
+	color: black;
+}
+.distancia{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+input[type=text], select, textarea{
+	width: 80%;
+	padding: 12px 20px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+
+}
+fieldset{
+	width: 80%;
+	border: 2px solid #ccc;
+	padding: 2%;
+}
 
 table {
 	border-collapse: collapse;
@@ -222,3 +286,40 @@ a:active {
 		color:red;
 	}
 		}
+/* telas maiores que 768px */
+	@media screen and (min-width: 900px) {
+		.container{
+			margin-top: 15%;
+		}
+		header{
+			background-color: rgb(0,0,255,0.8);
+			flex-direction: row;
+			position: relative;
+		}	
+
+		.menu-opcoes{
+			display: inline;
+			position: absolute;
+			right: 5%;
+			top: 45%;
+		}
+		.menu-opcoes ul li{
+			display: inline;
+			margin-left: 4%;
+
+		}
+		#sobre, #galeria{
+			flex-direction:row;
+			flex-wrap: wrap;
+		}
+		#sobre h1, h3, p{
+			width: 100%;
+			text-align: center;
+		}
+		#sobre .sobre, #galeria .galeria{
+			width: 25%;
+			text-align: center;
+		}
+		
+			
+	}

@@ -17,7 +17,9 @@
       <nav class="menu-opcoes">
         <ul class="ajustes">
           <li><a href="index.html#html">Início</a></li>
-          <li><a href="index.html">HTML</a></li>
+          <li><a href="index.html">Sobre</a></li>
+          <li><a href="index.html#galeria">Galeria</a></li>
+          <li><a href="index.html#sobre">HTML</a></li>
           <li><a href="index.html#css">CSS</a></li>
           <li><a href="Javascript.html">JavaScript</a></li>
           <li><a href="posicionamento.html">Positions</a></li>
@@ -26,11 +28,80 @@
       </nav> 
     </header>
     <div class="container">
-      <div>
-        <footer>
+      <h3 class="formh3" >Formulário de contato</h3>
+
+        <p>Entre em contato para tirar suas dúvida ou dar sugestões!</p>
+        <div class="fundo">
+            <form>
+              <div class="distancia">
+                <label>Nome: </label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome.">
+              </div>
+              <div class="distancia">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Senha:</label><br>
+                <input type="password" id="pwd" name="pwd">
+              </div>
+              <div class="distancia">
+                <label>Assunto: </label>
+                <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Digite o assunto">
+              </div>
+              <div class="distancia">
+                
+              </div>
+              <fieldset>
+                <legend>Idade</legend>
+                    <div class="distancia">
+                      <input type="radio" id="10anos" name="fav_language" value="-10">
+                      <label for="até_10_anos"> até 10 anos </label><br>
+                       
+                    </div>
+                    <div class="distancia">
+                      <input type="radio" id="18anos" name="fav_language" value="-18"> 
+                      <label for="entre_10_e_18">entre 11 e 17 anos </label><br>
+                      
+                    </div>
+                    <div class="distancia">
+                      <input type="radio" id="maior" name="fav_language" value="+18">
+                      <label for="maior_de_idade">+ de 18 anos </label><br>
+                    </div>
+              </fieldset>
+              <fieldset>
+                <legend>Sexo</legend>
+                    <div class="distancia">
+                      <input type="radio" id="maior" name="fav_language" value="+18">
+                      <label for="masculino">Masculino</label><br>
+                    </div>
+                    <div class="distancia">
+                      <input type="radio" id="maior" name="fav_language" value="+18">
+                      <label for="feminino">Feminino</label><br>
+                    </div>
+              </fieldset>
+              <div class="distancia">
+                <label for="escolaridade">Nível de escolaridade:</label>
+                  <select id="escolaridade" name="escolaridade">
+                    <option value="Fundamental">Fundamental</option>
+                    <option value="Ensino Médio">Ensino Médio</option>
+                    <option value="Superior">Superior</option>
+                    <option value="Especialização">Especialização</option>
+                  </select>
+              </div>
+              <div class="distancia">
+                <label for="escolaridade">Dúvidas ou sugestões:</label>
+                <textarea name="mensagem" style="width: 90%; height: 200px">Mande aqui:</textarea>
+              </div>
+
+              <div class="distancia">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+        </div>
+
+
+      <footer>
           <p class="center"><a href="index.html" target="_self"> Clique aqui se deseja retornar para a página principal </a></p>
         </footer>
-      </div>
     </div>  	
   </body>
 	
